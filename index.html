@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Re:Connect - 2032 동창회 공식 초대장</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="세월이 흘러도 변하지 않는 우리들의 이야기, Re:Connect 동창회에 소중한 당신을 초대합니다.">
+  <meta property="og:title" content="Re:Connect - 2032 동창회 공식 초대장">
+  <meta property="og:description" content="2032. 10. 1 (토) 오후 5시 창경궁에서 만나요!">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: WordPress Qi Luxury / Blossom Royal Edition (Cormorant Garamond, Cinzel, Gowun Batang, Noto Serif/Sans KR) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 꽃잎 & 골드 스파클 캔버스 -->
+  <canvas id="petal-canvas"></canvas>
+
+  <!-- 메인 모바일 래퍼 -->
+  <div class="mobile-container theme-qi-luxury">
+
+    <!-- 상단 플로팅 컨트롤 -->
+    <header class="top-bar">
+      <button id="petal-toggle" class="icon-btn" title="가을 효과 켜기/끄기" aria-label="가을 효과 토글">
+        <i class="fa-solid fa-leaf"></i>
+      </button>
+      <div class="top-title"><span class="brand-monogram">RC</span> INVITATION</div>
+      <button id="share-top-btn" class="icon-btn" title="초대장 공유" aria-label="초대장 공유">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+      </button>
+    </header>
+
+    <!-- 1. 메인 히어로 섹션 (WordPress Luxury Editorial Edition) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-frame-border"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <!-- 골드 헤리티지 엠블럼 크레스트 -->
+        <div class="hero-crest">
+          <span class="crest-leaf left">❦</span>
+          <span class="crest-year">EST. 2008 · REUNION 2032</span>
+          <span class="crest-leaf right">❦</span>
+        </div>
+        <h1 class="hero-title">Re:Connect</h1>
+        <div class="hero-divider">
+          <span class="line"></span>
+          <span class="diamond-icon">❖</span>
+          <span class="line"></span>
+        </div>
+        <p class="hero-subtitle">그 시절, 우리가 함께했던 찬란한 계절로</p>
+        <div class="hero-date-badge">
+          <span class="badge-accent"><i class="fa-regular fa-calendar-check"></i> 2032. 10. 1 (SAT)</span>
+          <span class="badge-time">5:00 PM · CHANGGYEONGGUNG</span>
+        </div>
+      </div>
+      <div class="scroll-down-hint">
+        <span class="scroll-text">INVITATION</span>
+        <div class="scroll-mouse-icon"></div>
+      </div>
+    </section>
+
+    <!-- 2. 초대 인사말 섹션 (WordPress Letter Edition) -->
+    <section class="section invite-section reveal-on-scroll" id="invitation">
+      <div class="section-crest-top">❦ ❦ ❦</div>
+      <div class="section-badge">CORDIALLY INVITED</div>
+      <h2 class="section-title">소중한 당신을 초대합니다</h2>
+      
+      <div class="card greeting-card editorial-letter">
+        <!-- 왁스 실(Wax Seal) 스탬프 -->
+        <div class="wax-seal" title="Re:Connect Official Seal">
+          <span class="seal-inner">RC</span>
+        </div>
+        <div class="letter-inner-border"></div>
+        <div class="quote-mark open">“</div>
+        <div class="invitation-text">
+          <p class="highlight-p">세월이 흘러도 변하지 않는 우리들의 이야기,<br><strong>Re:Connect</strong>에 초대합니다.</p>
+          <p>강의실과 교정을 함께 누비며 웃고 울던<br>그때의 소중한 추억을 기억하시나요?</p>
+          <p>오랜만에 흩어져 있던 반가운 얼굴들이 한자리에 모여<br>서로의 근황을 나누고자 합니다.</p>
+          <p>맛있는 음식과 즐거운 이야기가 준비되어 있으니<br>부담 없이 오셔서 자리를 빛내주세요.</p>
+        </div>
+        <div class="quote-mark close">”</div>
+        <div class="host-signature">
+          <span class="host-flourish">~ ✦ ~</span>
+          <span class="host-label">동창회 추진위원회 일동</span>
+          <span class="host-slogan">너와 나의 다시 만나는 시간</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. [사진 섹션] - 워드프레스 럭셔리 포토 프레임 슬라이더 -->
+    <section class="section photo-section reveal-on-scroll" id="photo-section">
+      <div class="section-crest-top">❦ ❦ ❦</div>
+      <div class="section-badge">MEMORIES & GALLERY</div>
+      <h2 class="section-title">그때 그 시절, 우리의 기억</h2>
+      <p class="section-desc">사진을 좌우로 넘겨 추억을 감상해보세요</p>
+
+      <div class="slider-container editorial-polaroid" id="slider-container">
+        <!-- 골드 코너 핀 장식 -->
+        <div class="gold-corner top-left"></div>
+        <div class="gold-corner top-right"></div>
+        <div class="gold-corner bottom-left"></div>
+        <div class="gold-corner bottom-right"></div>
+
+        <div class="slider-track" id="slider-track">
+          <!-- Slide 1 -->
+          <div class="slide active" data-index="0" data-caption="풋풋하고 설레던 첫 만남의 순간" data-title="입학식 (우리들의 시작)">
+            <div class="img-wrapper">
+              <img src="pictures/입학.jpg" alt="입학식 추억 사진" loading="lazy">
+              <div class="slide-badge"><span class="badge-num">01</span> 입학의 설렘</div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide" data-index="1" data-caption="햇살 아래 함께 웃고 떠들던 소풍날" data-title="봄소풍 (푸르른 청춘)">
+            <div class="img-wrapper">
+              <img src="pictures/봄소풍.jpg" alt="봄소풍 추억 사진" loading="lazy">
+              <div class="slide-badge"><span class="badge-num">02</span> 봄소풍의 추억</div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="slide" data-index="2" data-caption="숨겨둔 끼와 열정을 불태우던 밤" data-title="장기자랑 (뜨거웠던 무대)">
+            <div class="img-wrapper">
+              <img src="pictures/장기자랑.jpg" alt="장기자랑 추억 사진" loading="lazy">
+              <div class="slide-badge"><span class="badge-num">03</span> 열정의 장기자랑</div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="slide" data-index="3" data-caption="새로운 시작을 축복하며 흘린 눈물" data-title="졸업식 (안녕 그리고 또 만남)">
+            <div class="img-wrapper">
+              <img src="pictures/졸업.jpg" alt="졸업식 추억 사진" loading="lazy">
+              <div class="slide-badge"><span class="badge-num">04</span> 졸업과 새로운 만남</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 슬라이더 컨트롤 버튼 -->
+        <button class="slider-arrow prev" id="prev-btn" aria-label="이전 사진">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow next" id="next-btn" aria-label="다음 사진">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- 재생/일시정지 토글 버튼 -->
+        <button class="slider-play-btn" id="play-pause-btn" aria-label="자동 재생 토글" title="자동 재생 토글">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+
+        <!-- 캡션 정보 바 -->
+        <div class="caption-box" id="caption-box">
+          <h4 id="caption-title">입학식 (우리들의 시작)</h4>
+          <p id="caption-desc">풋풋하고 설레던 첫 만남의 순간</p>
+        </div>
+
+        <!-- 슬라이더 인디케이터 도트 -->
+        <div class="slider-dots" id="slider-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. [카운트다운 섹션] - 럭셔리 골드 링 타이머 -->
+    <section class="section countdown-section reveal-on-scroll" id="countdown-section">
+      <div class="section-crest-top">❦ ❦ ❦</div>
+      <div class="section-badge">COUNTDOWN</div>
+      <h2 class="section-title">우리가 다시 만날 때까지</h2>
+      <p class="section-desc">2032년 10월 1일 (토) 오후 5:00 · 창경궁</p>
+
+      <div class="dday-pill-luxury" id="dday-badge">
+        <span class="sparkle-icon">✦</span> D - CALC <span class="sparkle-icon">✦</span>
+      </div>
+
+      <div class="countdown-grid-luxury">
+        <div class="count-box">
+          <div class="count-card">
+            <span class="count-number" id="count-days">--</span>
+          </div>
+          <span class="count-label">DAYS</span>
+        </div>
+        <div class="count-separator">:</div>
+        <div class="count-box">
+          <div class="count-card">
+            <span class="count-number" id="count-hours">--</span>
+          </div>
+          <span class="count-label">HOURS</span>
+        </div>
+        <div class="count-separator">:</div>
+        <div class="count-box">
+          <div class="count-card">
+            <span class="count-number" id="count-minutes">--</span>
+          </div>
+          <span class="count-label">MINUTES</span>
+        </div>
+        <div class="count-separator">:</div>
+        <div class="count-box">
+          <div class="count-card pulse-sec">
+            <span class="count-number" id="count-seconds">--</span>
+          </div>
+          <span class="count-label">SECONDS</span>
+        </div>
+      </div>
+
+      <!-- 캘린더 등록 버튼 -->
+      <div class="calendar-actions">
+        <button id="add-google-cal" class="btn btn-gold-outline">
+          <i class="fa-brands fa-google"></i> 구글 캘린더 등록
+        </button>
+        <button id="download-ical" class="btn btn-gold-outline">
+          <i class="fa-regular fa-calendar-plus"></i> iCal 일정 저장
+        </button>
+      </div>
+    </section>
+
+    <!-- 5. 행사 정보 및 일시 상세 섹션 (에디토리얼 타임라인) -->
+    <section class="section event-info-section reveal-on-scroll">
+      <div class="section-crest-top">❦ ❦ ❦</div>
+      <div class="section-badge">SCHEDULE & PROGRAM</div>
+      <h2 class="section-title">일시 및 프로그램</h2>
+
+      <div class="editorial-timeline">
+        <div class="timeline-card">
+          <div class="time-badge">17:00</div>
+          <div class="timeline-content">
+            <div class="timeline-title"><i class="fa-solid fa-camera-retro"></i> 1부: 고궁 가을 산책 & 포토 타임</div>
+            <div class="timeline-desc">단풍 물든 창경궁 춘당지와 대온실을 함께 거닐며 기념사진 촬영</div>
+          </div>
+        </div>
+
+        <div class="timeline-card">
+          <div class="time-badge">18:30</div>
+          <div class="timeline-content">
+            <div class="timeline-title"><i class="fa-solid fa-champagne-glasses"></i> 2부: 동창회 공식 만찬 & 추억 토크</div>
+            <div class="timeline-desc">오랜만의 근황 토크, 추억의 영상 상영 및 만찬</div>
+          </div>
+        </div>
+
+        <div class="timeline-card venue-highlight">
+          <div class="time-badge venue"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-title">행사 장소: 창경궁</div>
+            <div class="timeline-desc">서울 종로구 창경궁로 185 (와룡동 2-1)</div>
+            <div class="timeline-note">※ 혜화역 4번 출구 도보 10분</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. [지도 섹션] - 300x300픽셀 크기 "창경궁" 네이버 위치 지도 -->
+    <section class="section map-section reveal-on-scroll" id="map-section">
+      <div class="section-badge">LOCATION MAP</div>
+      <h2 class="section-title">오시는 길</h2>
+      <p class="section-desc">창경궁 위치 및 길찾기 안내</p>
+
+      <div class="map-center-container">
+        <!-- 네이버 지도 스타일 300x300 컨테이너 -->
+        <div class="naver-map-wrapper">
+          <div class="map-top-header" id="map-header-btn" title="네이버 지도로 보기" role="button" tabindex="0">
+            <div class="naver-logo">
+              <span class="n-symbol">N</span> 네이버 지도
+            </div>
+            <div class="place-badge">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> 창경궁
+            </div>
+          </div>
+
+          <!-- 300x300 규격 맵 프레임 (절대 실패 없는 인터랙티브 맵) -->
+          <div id="naver-map-300" class="map-frame-300" role="region" aria-label="창경궁 네이버 지도">
+            <!-- 인터랙티브 네이버 맵 캔버스/SVG 레이어 -->
+            <div id="naver-vector-map" class="naver-vector-map">
+              <!-- JS에서 실시간 생성되는 고화질 창경궁 네이버 상세도 -->
+            </div>
+
+            <!-- 줌 & 위치 컨트롤 툴바 -->
+            <div class="map-controls-floating">
+              <button type="button" class="map-ctrl-btn" id="map-zoom-in" title="지도 확대" aria-label="확대">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button type="button" class="map-ctrl-btn" id="map-zoom-out" title="지도 축소" aria-label="축소">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <button type="button" class="map-ctrl-btn recenter" id="map-recenter-btn" title="창경궁 위치로 이동" aria-label="위치 재설정">
+                <i class="fa-solid fa-crosshairs"></i>
+              </button>
+            </div>
+
+            <!-- 지도 하단 축척 표시기 -->
+            <div class="map-scale-bar">
+              <span class="scale-line"></span>
+              <span class="scale-text">50m</span>
+            </div>
+          </div>
+
+          <div class="map-footer-banner" id="map-footer-btn" role="button" tabindex="0">
+            <i class="fa-solid fa-location-dot"></i> 서울 종로구 창경궁로 185
+            <span class="map-footer-hint">(터치 시 앱 열기)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 내비게이션 & 지도 앱 빠른 연결 버튼 그룹 -->
+      <div class="map-btn-group">
+        <button type="button" class="btn btn-naver" id="btn-naver-map">
+          <span class="n-icon">N</span> 네이버 지도로 열기
+        </button>
+        <button type="button" class="btn btn-primary" id="btn-naver-route">
+          <i class="fa-solid fa-diamond-turn-right"></i> 네이버 빠른 길찾기
+        </button>
+      </div>
+
+      <!-- 3대 내비게이션 앱 선택 퀵 바 -->
+      <div class="nav-app-grid">
+        <button type="button" class="nav-app-btn naver" id="quick-naver" title="네이버 지도 앱으로 연결">
+          <span class="nav-app-icon naver-bg">N</span>
+          <span class="nav-app-name">네이버 지도</span>
+        </button>
+        <button type="button" class="nav-app-btn kakao" id="quick-kakao" title="카카오맵 앱으로 연결">
+          <span class="nav-app-icon kakao-bg">K</span>
+          <span class="nav-app-name">카카오맵</span>
+        </button>
+        <button type="button" class="nav-app-btn tmap" id="quick-tmap" title="티맵 앱으로 연결">
+          <span class="nav-app-icon tmap-bg">T</span>
+          <span class="nav-app-name">티맵 (T-map)</span>
+        </button>
+      </div>
+
+      <!-- 주소 복사 바 -->
+      <div class="address-copy-bar">
+        <div class="address-text">
+          <span class="addr-label">주소</span>
+          <span class="addr-val" id="venue-address">서울 종로구 창경궁로 185 (창경궁)</span>
+        </div>
+        <button id="copy-address-btn" class="btn-copy" aria-label="주소 복사">
+          <i class="fa-regular fa-copy"></i> 복사
+        </button>
+      </div>
+
+      <!-- 교통편 안내 -->
+      <div class="transit-guide">
+        <div class="transit-item">
+          <div class="transit-type subway">지하철</div>
+          <div class="transit-desc">
+            <strong>4호선 혜화역</strong> 4번 출구 (도보 약 10분)<br>
+            <strong>4호선/1호선 동대문역</strong>, <strong>3호선 안국역</strong> 환승 버스 이용
+          </div>
+        </div>
+        <div class="transit-item">
+          <div class="transit-type bus">버스</div>
+          <div class="transit-desc">
+            '창경궁·서울대학교병원' 또는 '명륜동2가·성균관대입구' 하차<br>
+            간선: 100, 102, 104, 106, 107, 140, 143, 150, 151, 160, 162
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 참석 여부 전달 (RSVP) & 방명록 (WordPress Concierge Edition) -->
+    <section class="section rsvp-section reveal-on-scroll">
+      <div class="section-crest-top">❦ ❦ ❦</div>
+      <div class="section-badge">R.S.V.P</div>
+      <h2 class="section-title">참석 여부 전달하기</h2>
+      <p class="section-desc">원활한 식사 및 프로그램 준비를 위해 참석 여부를 알려주세요.</p>
+
+      <form id="rsvp-form" class="rsvp-form card editorial-form-card">
+        <div class="form-header-line">
+          <span class="gold-seal-text">REUNION RESPONSE</span>
+        </div>
+
+        <div class="form-group">
+          <label for="rsvp-name"><i class="fa-regular fa-user"></i> 성함 / 학과 (기수)</label>
+          <input type="text" id="rsvp-name" placeholder="예: 홍길동 (경영학과 08학번)" required>
+        </div>
+
+        <div class="form-group">
+          <label for="rsvp-phone"><i class="fa-solid fa-mobile-screen"></i> 연락처</label>
+          <input type="tel" id="rsvp-phone" placeholder="예: 010-1234-5678" required>
+        </div>
+
+        <div class="form-group">
+          <label><i class="fa-regular fa-calendar-check"></i> 참석 여부</label>
+          <div class="radio-group-luxury">
+            <label class="radio-label-luxury">
+              <input type="radio" name="attendance" value="attend" checked>
+              <span class="custom-radio-luxury"></span>
+              <span class="radio-text"><strong>참석합니다</strong> 🎉</span>
+            </label>
+            <label class="radio-label-luxury">
+              <input type="radio" name="attendance" value="absent">
+              <span class="custom-radio-luxury"></span>
+              <span class="radio-text"><strong>마음으로 응원</strong> 💌</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rsvp-message"><i class="fa-regular fa-comment-dots"></i> 동창들에게 전할 메시지 (선택)</label>
+          <textarea id="rsvp-message" rows="3" placeholder="오랜만에 만날 동기, 선후배들에게 반가운 한마디를 남겨주세요!"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-luxury-submit btn-block">
+          <i class="fa-solid fa-paper-plane"></i> 참석 응답 전달하기
+        </button>
+      </form>
+
+      <!-- 방명록 리스트 -->
+      <div class="guestbook-container">
+        <div class="guestbook-header-row">
+          <h3 class="guestbook-title"><i class="fa-regular fa-comments"></i> 친구들의 한마디</h3>
+          <span class="guestbook-count-badge">GUESTBOOK</span>
+        </div>
+        <div id="guestbook-list" class="guestbook-list">
+          <!-- 동적으로 생성되는 메시지들 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 공유하기 및 마무리 섹션 (WordPress Luxury Social Share) -->
+    <section class="section share-section reveal-on-scroll">
+      <div class="section-crest-top">❦ ❦ ❦</div>
+      <h3 class="share-title">동창 친구들에게 초대장 전하기</h3>
+      <p class="share-desc">보고 싶은 동기, 선후배들에게 소중한 초대장을 전달해보세요.</p>
+      <div class="share-btn-group">
+        <button id="share-link-btn" class="btn btn-gold-outline">
+          <i class="fa-solid fa-link"></i> 초대장 링크 복사
+        </button>
+        <button id="share-native-btn" class="btn btn-luxury-gold">
+          <i class="fa-solid fa-share-nodes"></i> 모바일 메신저 공유
+        </button>
+      </div>
+    </section>
+
+    <!-- 푸터 (WordPress Luxury Colophon) -->
+    <footer class="footer">
+      <div class="footer-crest">❦ ✦ ❦</div>
+      <div class="footer-logo">Re:Connect</div>
+      <p class="footer-slogan">세월이 흘러도 변하지 않는 우리들의 이야기</p>
+      <p class="footer-text">2032 Alumni Reunion · Changgyeonggung Palace<br>© 2032 Re:Connect. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <!-- 이미지 클릭 시 확대 모달 -->
+  <div id="image-modal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <img id="modal-img" src="" alt="확대 사진">
+      <p id="modal-caption"></p>
+    </div>
+  </div>
+
+  <!-- 토스트 알림 메시지 -->
+  <div id="toast" class="toast">메시지가 복사되었습니다.</div>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
